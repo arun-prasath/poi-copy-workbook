@@ -46,4 +46,8 @@ public class CopyWorkbook {
 			}
 		}
 	}
+	
+	public void printContents(String fileName) {
+		this.printContents(new File(fileName));
+	}
 }
