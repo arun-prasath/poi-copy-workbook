@@ -19,7 +19,6 @@ public class CopyWorkbook {
 		
 		try {
 			fis = new FileInputStream(file);
-			
 			workbook = new XSSFWorkbook (fis);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			 
@@ -34,7 +33,6 @@ public class CopyWorkbook {
 				System.out.println();
 			}
 			
-			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException ioe) {
@@ -46,7 +44,6 @@ public class CopyWorkbook {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			
 		}
 	}
 }
